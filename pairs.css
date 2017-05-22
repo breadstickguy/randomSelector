@@ -1,0 +1,47 @@
+body {
+	text-align: center;
+}
+
+h1 {
+	padding: 20px 20px 20px 20px;
+}
+
+
+button {
+	color: #fff;
+  	text-shadow: -2px 2px #346392;
+  	background-color: #6496c8;
+    background-image: -webkit-linear-gradient(#6496c8, #0164c6);
+    background-image: -o-linear-gradient(#6496c8, #0164c6);
+    background-image: linear-gradient(#6496c8, #0164c6);
+  	box-shadow: inset 0 0 0 1px #27496d;
+  	border: none;
+  	border-radius: 15px;
+	display: inline-block;
+  	margin: 0 10px 0 0;
+  	padding: 15px 45px;
+  	font-size: 48px;
+  	font-family: "Bitter",serif;
+  	line-height: 1.8;
+  	appearance: none;
+}
+
+button:hover {
+	box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+button:active {
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+.pairs > div {
+	margin: 80px;
+	font-size: 48px;
+	color: #0164c6;
+}
+
+.get-programming {
+	margin: 80px;
+	font-size: 48px;
+	color: #0164c6;
+}
