@@ -70,7 +70,18 @@ $(document).ready(function() {
 		console.log('trio', trio);
 		return trio;
 	}
+
+
+	function getMarvelAPI() {
+		$.ajax({
+			url: 'http://gateway.marvel.com/v1/public/characters?name=Nova&apikey=7ebc44170403dcc0cd0bdf76f2501719',
+			method: 'GET'
+		}).done(function(response) {
+			console.log(response);
+	});
+	}
 	
+	getMarvelAPI();
 
 	$('button').click(function() {
 		var trios = randomPair(shuffle(classList));
