@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 	function getMarvelAPI() {
 		$.ajax({
-			url: 'http://gateway.marvel.com/v1/public/characters?name=Nova&apikey=7ebc44170403dcc0cd0bdf76f2501719',
+			url: 'https://gateway.marvel.com/v1/public/characters?name=Nova&apikey=7ebc44170403dcc0cd0bdf76f2501719',
 			method: 'GET'
 		}).done(function(response) {
 			console.log(response);
