@@ -1,8 +1,44 @@
 // $(document).ready(function() {
 
-	const classList = [  'Michael', 'Eli', 'Casey', 'Steven', 'Tim', 
-	'Patrick', 'Esteban', 'Michelle', 'LeeAnna', 'Devren', 
-	'Tyler', 'Frank', 'John', 'James', 'Ryan', 'Rich', 'Sam', 'Andrew', 'Tarmin'];
+	const classList = [
+		'Andrew',
+		'Angel',
+		'Ashley',
+		'Brennin',
+		'Chance',
+		'Christopher',
+		"Daniel",
+		"David",
+		"Deana",
+		"Edward",
+		"Garrett",
+		"Gayathri",
+		"Heath",
+		"Hunter",
+		"Jacob",
+		"Jason",
+		"Jeremiah",
+		"Jeremy",
+		"Johnny",
+		"Josh",
+		"Katri-Alexandra",
+		"Kyle",
+		"Mackenzie",
+		"Matthew",
+		"Max",
+		"Meg",
+		"Michael Schumann",
+		"Nick Baker",
+		"Nick Hosley",
+		"Paulo",
+		"Renata",
+		"Shane",
+		"Shervin",
+		"Stefani",
+		"Steven",
+		"Thomas",
+		"Tyler"
+	];
 
 
 	// // var saturdayClassList = [
