@@ -1,103 +1,64 @@
-// $(document).ready(function() {
+$(document).ready(function() {
 
 	const classList = [  
-		'Andrew',
-		'Angel',
-		'Ashley',
-		'Brennin',
-		'Chance',
+		'Jorge',
+		'Artie',
+		'Kolton',
+		// 'Christine',
+		'Christian', 
+		'Grace'	,
+		'Viviana',
+		'Adam S',
+		'Adam F',
+		'Matt',
+		'Kylee',
+		'Jenae',
+		'Anthony',
+		'Jose',
+		'Josh',
+		'Frank',
+		'Leigh',
+		'Justin',
+		'Alex',
+		'Beau',
+		// 'Dave',
+		'Ethan',
+		'Van',
+		"Barry"
+	];
+	const classList = [
+		// 'Herold',
+		'Ryan',
 		'Christopher',
-		"Daniel",
-		"David",
-		"Deana",
-		"Edward",
-		"Garrett",
-		"Gayathri",
-		"Heath",
-		"Hunter",
-		"Jacob",
-		"Jason",
-		"Jeremiah",
-		"Jeremy",
-		// "Jesse",
-		"Keith",
-		"Josh",
-		"Katri-Alexandra",
-		// "Khounsavath",
-		"Kyle",
-		"Mackenzie",
-		"Matthew",
-		"Max",
-		"Meg",
-		"Michael Schmidgall",
-		"Michael Schumann",
-		"Nick Baker",
-		"Nick Hosley",
-		// "Patricia",
-		"Paulo",
-		"Renata",
-		// "Ricardo",
-		"Shane",
-		"Shawn",
-		"Shervin",
-		"Stefani",
-		"Steven",
-		"Thomas",
-		"Tyler"
+		'Dan',
+		'Dylan',
+		'Graciela',
+		'Christine',
+		'Patrycja',
+		'Zander',
+		'Rodnee',
+		'Amber',
+		'Edgar',
+		'Mat',
+		'Dametri',
+		'Jeremy',
+		'Becky',
+		'Steven',
+		'Satinder',
+		'Emily',
+		'Erika',
+		'Easter',
+		'Aimes',
+		'Luis R',
+		'Luis V',
+		'Hunter',
+		'Carlos',
+		'Josh'
 	];
 
-
-	// // var saturdayClassList = [
-	// 	'Casey',
-
-	// 	'Catherine',
-	// 	'Christopher',
-	// 	'Danae',
-	// 	'Daniel',
-	// 	'Devren',
-	// 	'Drew',
-	// 	'Eli',
-	// 	'Esteban',
-	// 	'Frank',
-	// 	'George Awad',
-	// 	'Greg',
-	// 	'James',
-	// 	'Jeffrey Hatch',
-	// 	'Jeffrey Schultz',
-	// 	'John',
-	// 	'Jorge Cordova',
-	// 	'Jose',
-	// 	'Kevin',
-	// 	'Kyle',
-	// 	'LeeAnna',
-	// 	'Manish',
-	// 	'Michael',
-	// 	'Michelle',
-	// 	'Nathan',
-	// 	'Nicholas',
-	// 	'Omar',
-	// 	'Oscar',
-	// 	'Patrick',
-	// 	'Paul',
-	// 	'Phillip',
-	// 	'Rich',
-	// 	'Robert',
-	// 	'Ryan',
-		
-	// 	'Saul',
-	// 	'Sherry',
-	// 	'Steven',
-	// 	'Tamy',
-	// 	'Tarmin',
-	// 	'Tim',
-	// 	'Travis',
-	// 	'Tyler',
-	// 	'Wes',
-	// 	'William'
-	// // ];
 	
 	const shuffle = array => {
- 		let i = 0, j = 0, temp = null
+ 		let i = 0, j = 0, temp = null;
   		for (i = array.length - 1; i > 0; i -= 1) {
 		    j = Math.floor(Math.random() * (i + 1))
     		temp = array[i];
@@ -107,36 +68,39 @@
    		return array;
 	}
 
-	const randomPair = array => console.log('Best buddy teammates =>', array.splice(0,2));
+	const randomPair = array => array.splice(0,3);  // return a console log for recursive version
+	// return array.splice for Jake Weary
 
 
-const recursivePairFinder = (classList) => {
-	// console.log('first =>', classList);
-	if(classList.length <= 0) {
-		return;
- 	}		
+// const recursivePairFinder = classList => {
+// 	// console.log('first =>', classList);
+// 	if(classList.length <= 0) {
+// 		return;
+//  	}		
 	
-	randomPair(shuffle(classList));
- 	recursivePairFinder(classList);
-}
+// 	randomPair(shuffle(classList));
+//  	recursivePairFinder(classList);
+// }
 
 
-recursivePairFinder(classList);
+// recursivePairFinder(classList);
 
 
-	// $('button').click(function() {
-	// 	var pairs = randomPair(shuffle(classList));
-	// 	$('#first').html(pairs[0]);
-	// 	$('#second').html(pairs[1]);
-	// 	$('#third').html(pairs[2]);
+	$('button').click(() => {
+		const pairs = randomPair(shuffle(classList));
+		console.log(pairs);
+		$('#first').html(pairs[0]);
+		$('#second').html(pairs[1]);
+		// $('#third').html(pairs[2]);
+		// $('#forth').html(pairs[3]);
 
-	// 	if (classList.length === 0) {
-	// 		// $('.pairs').empty();
-	// 		$('.get-programming').html("That's everyone, get to programming!");
-	// 		$('button').attr('disabled', true);
+		if (classList.length === 0) {
+			$('.pairs').empty();
+			$('.get-programming').html("That's everyone, get to programming!");
+			$('button').attr('disabled', true);
 
-	// 	}
-	// });
+		}
+	});
 
 
-// });
+});
