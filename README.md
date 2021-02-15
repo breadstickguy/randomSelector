@@ -1,3 +1,3 @@
 # randomSelector
 
-A basic array randomizer using Fisher-Yates shuffle
+BASKETBALL IS A GREAT SPORT!!!!!!!!!!!!!!!!!
